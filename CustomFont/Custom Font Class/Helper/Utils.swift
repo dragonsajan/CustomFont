@@ -110,9 +110,16 @@ struct Utils {
     /// Helper function to save fontslist to userdefaults
     /// - Parameter fonts: CFont array
     static func saveFonts(fonts: [CFont]?) {
+        
+        
         if let fonts = fonts {
-            let data: NSData? = NSKeyedArchiver.archivedData(withRootObject: fonts) as NSData
-            UserDefaults.standard.setValue(data, forKey: "FontKey")
+            do {
+                let data = try NSKeyedArchiver.archivedData(withRootObject: fonts, requiringSecureCoding: false) as NSData
+                UserDefaults.standard.setValue(data, forKey: "FontKey")
+            } catch {
+               print("Error saving data")
+            }
+           
         } else {
             UserDefaults.standard.setValue(nil, forKey: "FontKey")
         }
@@ -123,11 +130,15 @@ struct Utils {
     /// Helper function to get fontslist from userdefaults
     /// - Returns: CFont array
     static func getFonts() -> [CFont]? {
+        
         if let data = UserDefaults.standard.value(forKey: "FontKey") as? NSData {
-            return NSKeyedUnarchiver.unarchiveObject(with: data as Data) as? [CFont]
-        } else {
-            return nil
+            do {
+                return try NSKeyedUnarchiver.unarchiveTopLevelObjectWithData(data as Data) as? [CFont]
+            } catch {
+               print("Error saving data")
+            }
         }
+        return nil
     }
     
 }

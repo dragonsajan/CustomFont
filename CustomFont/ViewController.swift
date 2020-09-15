@@ -11,6 +11,7 @@ import MobileCoreServices
 
 class ViewController: UIViewController, UIDocumentPickerDelegate {
 
+    @IBOutlet weak var stackView: UIStackView!
     @IBOutlet weak var selectedFontLabel: UILabel!
     @IBOutlet weak var testLable: UILabel!
     @IBOutlet weak var testTextView: UITextView!
@@ -30,8 +31,10 @@ class ViewController: UIViewController, UIDocumentPickerDelegate {
         fontArray = Utils.getFonts() ?? []
         configureTableview()
         tableView.reloadData()
+        tableView.keyboardDismissMode = .onDrag
     }
     
+    //MARK: - Button Pressed Events
     @IBAction func downloadFont(_ sender: Any) {
         
         let types = [String("public.truetype-ttf-font"),

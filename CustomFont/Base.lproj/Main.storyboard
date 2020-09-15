@@ -29,8 +29,8 @@
                                     <action selector="downloadFont:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hEt-o8-D7V"/>
                                 </connections>
                             </button>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="YrJ-tU-wrj">
-                                <rect key="frame" x="20" y="114" width="374" height="748"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="YrJ-tU-wrj">
+                                <rect key="frame" x="20" y="84" width="374" height="778"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Selected Font: " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wwc-Z1-4Ii">
                                         <rect key="frame" x="0.0" y="0.0" width="374" height="18"/>
@@ -39,23 +39,23 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This is test font." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UZX-w0-PHi">
-                                        <rect key="frame" x="0.0" y="48" width="374" height="30"/>
+                                        <rect key="frame" x="0.0" y="33" width="374" height="30"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="This is test font." textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="qFs-Ue-yCd">
-                                        <rect key="frame" x="0.0" y="108" width="374" height="128"/>
+                                        <rect key="frame" x="0.0" y="78" width="374" height="80"/>
                                         <color key="backgroundColor" systemColor="systemGray4Color" red="0.81960784310000001" green="0.81960784310000001" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="128" id="oZB-KH-0se"/>
+                                            <constraint firstAttribute="height" constant="80" id="oZB-KH-0se"/>
                                         </constraints>
                                         <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="vSo-EY-OeJ">
-                                        <rect key="frame" x="0.0" y="266" width="374" height="482"/>
+                                        <rect key="frame" x="0.0" y="173" width="374" height="605"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select Font" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="URE-EL-A70">
                                                 <rect key="frame" x="0.0" y="0.0" width="374" height="21.5"/>
@@ -64,7 +64,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="lGi-Oq-n9D">
-                                                <rect key="frame" x="0.0" y="31.5" width="374" height="450.5"/>
+                                                <rect key="frame" x="0.0" y="31.5" width="374" height="573.5"/>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                             </tableView>
                                         </subviews>
@@ -79,12 +79,13 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="YrJ-tU-wrj" secondAttribute="bottom" id="NeK-bh-fpZ"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Qgc-yb-Gu5" secondAttribute="trailing" constant="30" id="e11-e2-KMc"/>
                             <constraint firstItem="YrJ-tU-wrj" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="ezQ-FZ-Dcd"/>
-                            <constraint firstItem="YrJ-tU-wrj" firstAttribute="top" secondItem="Qgc-yb-Gu5" secondAttribute="bottom" constant="30" id="lWQ-XP-eey"/>
+                            <constraint firstItem="YrJ-tU-wrj" firstAttribute="top" secondItem="Qgc-yb-Gu5" secondAttribute="bottom" id="lWQ-XP-eey"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
                         <outlet property="selectedFontLabel" destination="wwc-Z1-4Ii" id="LIb-qR-nda"/>
+                        <outlet property="stackView" destination="YrJ-tU-wrj" id="FCA-eZ-HSc"/>
                         <outlet property="tableView" destination="lGi-Oq-n9D" id="a6P-QI-9gb"/>
                         <outlet property="testLable" destination="UZX-w0-PHi" id="cxg-TR-JyA"/>
                         <outlet property="testTextView" destination="qFs-Ue-yCd" id="Sp7-c3-9GZ"/>

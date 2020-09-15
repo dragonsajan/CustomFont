@@ -7,15 +7,35 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D814DA97250E7C8400823384 /* Someone.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D814DA96250E707600823384 /* Someone.ttf */; };
+		D814DA99250FC5EB00823384 /* SystemFonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = D814DA98250FC5EB00823384 /* SystemFonts.swift */; };
 		D8A26B722507A79B00633C74 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8A26B712507A79B00633C74 /* AppDelegate.swift */; };
 		D8A26B742507A79B00633C74 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8A26B732507A79B00633C74 /* SceneDelegate.swift */; };
 		D8A26B762507A79B00633C74 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8A26B752507A79B00633C74 /* ViewController.swift */; };
 		D8A26B792507A79B00633C74 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8A26B772507A79B00633C74 /* Main.storyboard */; };
 		D8A26B7B2507A7A000633C74 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D8A26B7A2507A7A000633C74 /* Assets.xcassets */; };
 		D8A26B7E2507A7A000633C74 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8A26B7C2507A7A000633C74 /* LaunchScreen.storyboard */; };
+		D8C6371F250C9539005F9ED8 /* CustomFontCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8C6371D250C9539005F9ED8 /* CustomFontCell.swift */; };
+		D8C63720250C9539005F9ED8 /* CustomFontCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D8C6371E250C9539005F9ED8 /* CustomFontCell.xib */; };
+		D8C63723250D0B18005F9ED8 /* CFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8C63722250D0B18005F9ED8 /* CFont.swift */; };
+		D8C63726250D0D4D005F9ED8 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8C63725250D0D4D005F9ED8 /* Utils.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		D8C63716250BF95B005F9ED8 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 7;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		D814DA96250E707600823384 /* Someone.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Someone.ttf; sourceTree = "<group>"; };
+		D814DA98250FC5EB00823384 /* SystemFonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SystemFonts.swift; sourceTree = "<group>"; };
 		D8A26B6E2507A79B00633C74 /* CustomFont.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CustomFont.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8A26B712507A79B00633C74 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D8A26B732507A79B00633C74 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +44,11 @@
 		D8A26B7A2507A7A000633C74 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D8A26B7D2507A7A000633C74 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D8A26B7F2507A7A000633C74 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D8C63714250BE915005F9ED8 /* CustomFont.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CustomFont.entitlements; sourceTree = "<group>"; };
+		D8C6371D250C9539005F9ED8 /* CustomFontCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomFontCell.swift; sourceTree = "<group>"; };
+		D8C6371E250C9539005F9ED8 /* CustomFontCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomFontCell.xib; sourceTree = "<group>"; };
+		D8C63722250D0B18005F9ED8 /* CFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CFont.swift; sourceTree = "<group>"; };
+		D8C63725250D0D4D005F9ED8 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,9 +81,12 @@
 		D8A26B702507A79B00633C74 /* CustomFont */ = {
 			isa = PBXGroup;
 			children = (
+				D8C63717250C929D005F9ED8 /* Custom Font Class */,
+				D8C63714250BE915005F9ED8 /* CustomFont.entitlements */,
 				D8A26B712507A79B00633C74 /* AppDelegate.swift */,
 				D8A26B732507A79B00633C74 /* SceneDelegate.swift */,
 				D8A26B752507A79B00633C74 /* ViewController.swift */,
+				D814DA96250E707600823384 /* Someone.ttf */,
 				D8A26B772507A79B00633C74 /* Main.storyboard */,
 				D8A26B7A2507A7A000633C74 /* Assets.xcassets */,
 				D8A26B7C2507A7A000633C74 /* LaunchScreen.storyboard */,
@@ -67,16 +95,64 @@
 			path = CustomFont;
 			sourceTree = "<group>";
 		};
+		D8C63717250C929D005F9ED8 /* Custom Font Class */ = {
+			isa = PBXGroup;
+			children = (
+				D8C63724250D0D40005F9ED8 /* Helper */,
+				D8C63721250D0AF2005F9ED8 /* Custom Class */,
+				D8C6371C250C951C005F9ED8 /* Custom Font Cell */,
+			);
+			path = "Custom Font Class";
+			sourceTree = "<group>";
+		};
+		D8C6371C250C951C005F9ED8 /* Custom Font Cell */ = {
+			isa = PBXGroup;
+			children = (
+				D8C6371D250C9539005F9ED8 /* CustomFontCell.swift */,
+				D8C6371E250C9539005F9ED8 /* CustomFontCell.xib */,
+			);
+			path = "Custom Font Cell";
+			sourceTree = "<group>";
+		};
+		D8C63721250D0AF2005F9ED8 /* Custom Class */ = {
+			isa = PBXGroup;
+			children = (
+				D8C63722250D0B18005F9ED8 /* CFont.swift */,
+				D814DA98250FC5EB00823384 /* SystemFonts.swift */,
+			);
+			path = "Custom Class";
+			sourceTree = "<group>";
+		};
+		D8C63724250D0D40005F9ED8 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				D8C63725250D0D4D005F9ED8 /* Utils.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		D8C63715250BF956005F9ED8 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		D8A26B6D2507A79B00633C74 /* CustomFont */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = D8A26B822507A7A000633C74 /* Build configuration list for PBXNativeTarget "CustomFont" */;
 			buildPhases = (
+				D8C63715250BF956005F9ED8 /* Headers */,
 				D8A26B6A2507A79B00633C74 /* Sources */,
 				D8A26B6B2507A79B00633C74 /* Frameworks */,
 				D8A26B6C2507A79B00633C74 /* Resources */,
+				D8C63716250BF95B005F9ED8 /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -126,6 +202,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				D8A26B7E2507A7A000633C74 /* LaunchScreen.storyboard in Resources */,
+				D814DA97250E7C8400823384 /* Someone.ttf in Resources */,
+				D8C63720250C9539005F9ED8 /* CustomFontCell.xib in Resources */,
 				D8A26B7B2507A7A000633C74 /* Assets.xcassets in Resources */,
 				D8A26B792507A79B00633C74 /* Main.storyboard in Resources */,
 			);
@@ -138,9 +216,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D814DA99250FC5EB00823384 /* SystemFonts.swift in Sources */,
 				D8A26B762507A79B00633C74 /* ViewController.swift in Sources */,
 				D8A26B722507A79B00633C74 /* AppDelegate.swift in Sources */,
+				D8C63723250D0B18005F9ED8 /* CFont.swift in Sources */,
 				D8A26B742507A79B00633C74 /* SceneDelegate.swift in Sources */,
+				D8C6371F250C9539005F9ED8 /* CustomFontCell.swift in Sources */,
+				D8C63726250D0D4D005F9ED8 /* Utils.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,13 +366,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = CustomFont/CustomFont.entitlements;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 28QBQ2JWLD;
 				INFOPLIST_FILE = CustomFont/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.dragon.testing.CustomFont;
+				PRODUCT_BUNDLE_IDENTIFIER = com.beegile.acdcmobile;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -301,13 +385,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = CustomFont/CustomFont.entitlements;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 28QBQ2JWLD;
 				INFOPLIST_FILE = CustomFont/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.dragon.testing.CustomFont;
+				PRODUCT_BUNDLE_IDENTIFIER = com.beegile.acdcmobile;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
